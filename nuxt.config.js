@@ -5,7 +5,7 @@ module.exports = {
   target: "static",
 
   router: {
-    base: "/Vuemmerce/"
+    base: "/"
   },
 
   /*
@@ -23,25 +23,25 @@ module.exports = {
       { name: "theme-color", content: "#ffffff" },
 
       // Facebook open graph
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://example.com/page.html" },
-      { property: "og:title", content: "Content Title" },
-      { property: "og:image", content: "https://example.com/image.jpg" },
-      { property: "og:description", content: "Description Here" },
-      { property: "og:site_name", content: "Site Name" },
-      { property: "og:locale", content: "en_US" },
+      // { property: "og:type", content: "website" },
+      // { property: "og:url", content: "https://example.com/page.html" },
+      // { property: "og:title", content: "Content Title" },
+      // { property: "og:image", content: "https://example.com/image.jpg" },
+      // { property: "og:description", content: "Description Here" },
+      // { property: "og:site_name", content: "Site Name" },
+      // { property: "og:locale", content: "en_US" },
 
       // Twitter card
-      { property: "twitter:card", content: "summary" },
-      { property: "twitter:site", content: "@site_account" },
-      { property: "twitter:creator", content: "@individual_account" },
-      { property: "twitter:url", content: "https://example.com/page.html" },
-      { property: "twitter:title", content: "Content Title" },
-      {
-        property: "twitter:description",
-        content: "Content description less than 200 characters"
-      },
-      { property: "twitter:image", content: "https://example.com/image.jpg" }
+      // { property: "twitter:card", content: "summary" },
+      // { property: "twitter:site", content: "@site_account" },
+      // { property: "twitter:creator", content: "@individual_account" },
+      // { property: "twitter:url", content: "https://example.com/page.html" },
+      // { property: "twitter:title", content: "Content Title" },
+      // {
+      //   property: "twitter:description",
+      //   content: "Content description less than 200 characters"
+      // },
+      // { property: "twitter:image", content: "https://example.com/image.jpg" }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },

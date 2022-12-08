@@ -1,24 +1,22 @@
 {
-  "name": "vuemmerce",
-  "version": "1.1.0",
-  "description": "Ecommerce template built with Vue.js and Nuxt.js",
-  "author": "ivan lori <ivan.lori@protonmail.com>",
+  "name": "bibit-ecommerce",
+  "version": "1.1.1",
+  "description": "Bibit Ecommerce",
+  "author": "Akbar Priyono Haryadi <ivan.lori@protonmail.com>",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivanlori/Vuemmerce.git"
+    "url": "https://github.com/akbarharyadi/bibit-ecommerce.git"
   },
   "keywords": [
     "css",
     "js",
     "html",
-    "template",
     "ecommerce",
     "vuejs",
-    "theme",
     "responsive",
     "nuxtjs"
   ],
