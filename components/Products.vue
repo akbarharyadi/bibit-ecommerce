@@ -10,11 +10,12 @@
             price: product.price,
             rating: product.ratings,
             reviews: product.reviews,
-            isAddedBtn: product.isAddedBtn
+            isAddedBtn: product.isAddedBtn,
+            images: product.images
           }
         }"
       >
-        <img class="rounded-t-2xl" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        <img class="rounded-t-2xl" :src="product.images" alt="Placeholder image" style="height:400px;width:100%;">
       </nuxt-link>
     </div>
     <div class="text-wrapper p-4">
@@ -29,7 +30,8 @@
                   price: product.price,
                   rating: product.ratings,
                   reviews: product.reviews,
-                  isAddedBtn: product.isAddedBtn
+                  isAddedBtn: product.isAddedBtn,
+                  images: product.images
                 }
               }"
             >
@@ -51,7 +53,7 @@
         <p :class="[detail ? 'text-2xl' : 'text-base']">{{ product.description }}</p>
         <div class="flex justify-between">
           <div class="flex items-center">
-            <i v-if="product.ratings === 1" class="fa fa-star"></i>
+            <!-- <i v-if="product.ratings === 1" class="fa fa-star"></i>
             <i v-if="product.ratings === 2" class="fa fa-star"></i>
             <i v-if="product.ratings === 2" class="fa fa-star"></i>
             <i v-if="product.ratings === 3" class="fa fa-star"></i>
@@ -66,22 +68,22 @@
             <i v-if="product.ratings === 5" class="fa fa-star"></i>
             <i v-if="product.ratings === 5" class="fa fa-star"></i>
             <i v-if="product.ratings === 5" class="fa fa-star"></i>
-            <p class="ml-2 text-lg">{{ product.reviews > 0 ? `${product.reviews} Reviews` : 'No reviews' }}</p>
+            <p class="ml-2 text-lg">{{ product.reviews > 0 ? `${product.reviews} Reviews` : 'No reviews' }}</p> -->
           </div>
-          <p class="text-3xl font-medium">
-            <strong>&euro; {{ product.price }}</strong>
+          <p class="text-1xl font-medium">
+            Tersedia: <strong> {{ product.price }}</strong>
           </p>
         </div>
         <div class="flex justify-between mt-5 items-center">
-          <select class="p-2 border-2 rounded-2xl" @change="onSelectQuantity(product.id)" v-model="selected">
-            <option
+          <!-- <select class="p-2 border-2 rounded-2xl" @change="onSelectQuantity(product.id)" v-model="selected"> -->
+            <!-- <option
               v-bind:key="quantity"
               v-for="quantity in quantityArray"
               :value="quantity"
             >
               {{ quantity }}
-            </option>
-          </select>
+            </option> -->
+          <!-- </select> -->
           <button class="rounded-xl p-3 bg-blue text-white" v-if="!product.isAddedToCart" @click="addToCart(product.id)">{{ addToCartLabel }}</button>
           <button class="rounded-xl p-3" v-if="product.isAddedToCart" @click="removeFromCart(product.id, false)">{{ removeFromCartLabel }}</button>
         </div>
@@ -97,7 +99,7 @@ export default {
 
   data () {
     return {
-      addToCartLabel: 'Add to cart',
+      addToCartLabel: 'Ajukan',
       viewDetailsLabel: 'Details',
       removeFromCartLabel: 'Remove from cart',
       addToFavouriteLabel: 'Add to favourite',

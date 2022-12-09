@@ -144,16 +144,39 @@ module.exports = {
   modules: [
     '@nuxt/postcss8',
     'nuxt-purgecss',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
   ],
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'token',
+          global: true,
+          // required: true,
+          // type: 'Bearer'
+        },
+        user: {
+          property: 'user',
+          // autoFetch: true
+        },
+        endpoints: {
+          login: false,
+          logout: false,
+          user: { url: '/auth/user', method: 'get', propertyName: 'user' }
+        }
+      }
+    }
+  },
   /*
    ** Axios module configuration
    */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: "http://localhost:4000"
   },
 
   generate: {
-    dir: "docs"
+    dir: "dist"
   },
 
   purgeCSS: {

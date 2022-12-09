@@ -2,111 +2,120 @@ export const state = () => ({
   products: [
     {
       id: 1,
-      title: 'Product 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Mahoni',
+      description: 'Pohon Mahoni dapat tumbuh dengan subur di pasir payau dekat dengan pantai dan menyukai tempat yang cukup sinar matahari langsung.',
       price: 50,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 50,
+      images: 'https://f1-styx.imgix.net/article/2020/03/10095150/bm1-kumpulan-biji-mahoni.png'
     },
     {
       id: 2,
-      title: 'Product 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Pinus',
+      description: 'Tanaman pinus memiliki berbagai manfaat untuk kesehatan dan keperluan industri. Manfaat tanaman pinus dari aspek kesehatan antara lain, mengandung Flavanoid dan Vitamin C. ',
       price: 35,
       ratings: 5,
       reviews: 10,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      images: 'https://cf.shopee.co.id/file/e147f6029c7ca3ba7f138b9757664916'
     },
     {
       id: 3,
-      title: 'Product 3',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Meranti',
+      description: 'Pohon meranti merah terdiri dari 22 jenis spesies, diantaranya adalah Shorea acuminata, Shorea joharensis, Shorea lepidota dan Shorea leprosula.',
       price: 110,
       ratings: 2,
       reviews: 3,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      images: 'https://inhutani-2.co.id/iht2_baru/album/g3.jpg'
     },
     {
       id: 4,
-      title: 'Product 4',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Durian',
+      description: 'Durian adalah nama tumbuhan tropis yang berasal dari wilayah Asia Tenggara, sekaligus nama buahnya yang bisa dimakan. Durian memiliki banyak jenis...',
       price: 50,
       ratings: 1,
       reviews: 0,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      images: 'http://jualbibitonline.com/wp-content/uploads/2018/08/Jual-Bibit-Durian-Musang-King-70-cm.jpg'
     },
     {
       id: 5,
-      title: 'Product 5',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Kemiri',
+      description: 'Bibit Kemiri Sunan Kemiri atau dalam bahasa Latin Aleurites Trisperma Blanco adalah tanaman biji yang masih tergolong ke dalam tanaman rempah-rempah.',
       price: 35,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      images: 'https://www.snackeroo.com/wp-content/uploads/DSC00053-Edited-1024x768.jpg'
     },
     {
       id: 6,
-      title: 'Product 6',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Jengkol',
+      description: 'Bibit jengkol atau jering adalah tanaman yang berasal dari Asia Tenggara. Di Indonesia jengkol sering dijadikan masakan yang sangat sedap dan memiliki rasa khas tersendiri.',
       price: 110,
       ratings: 5,
       reviews: 1,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      images: 'https://s0.bukalapak.com/img/0803972805/large/Bibit_Tanaman_Jengkol_Super.jpg.webp'
     },
     {
       id: 7,
-      title: 'Product 7',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Alpukat',
+      description: 'Alpukat adalah salah satu buah yang cukup populer di tanah air. Buah yang satu ini sangat terkenal sebagai jus. Warnanya yang khas dan rasanya yang nikmat menjadikannya …',
       price: 50,
       ratings: 5,
       reviews: 7,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      images: 'https://s4.bukalapak.com/img/491551736/w-1000/Bibit_Alpukat_Miki.jpg'
     },
     {
       id: 8,
-      title: 'Product 8',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Strawberry',
+      description: 'Strawberry adalah buah manis berbentuk hati berwarna merah, yang sangat disukai karena rasanya yang enak dan manfaat nutrisinya.Buah ini adalah sumber vitamin C dan mangan yang sangat baik...',
       price: 35,
       ratings: 3,
       reviews: 0,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      images: 'https://cdn-cas.orami.co.id/parenting/images/10506.width-1000.jpg'
     },
     {
       id: 9,
-      title: 'Product 9',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      title: 'Mangga',
+      description: 'Mangga atau mempelam adalah nama sejenis buah, demikian pula nama pohonnya. Mangga termasuk ke dalam marga Mangifera, yang terdiri dari 35-40 anggota dari suku Anacardiaceae.',
       price: 110,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
+      quantity: 1,
+      images: 'https://akcdn.detik.net.id/community/media/visual/2019/11/11/33ae5441-1e3d-450d-a817-373b10a9246c.jpeg'
     }
   ],
   userInfo: {

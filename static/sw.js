@@ -30,7 +30,7 @@ workbox.precaching.precacheAndRoute([
     "revision": "29c510d8a276d4bf03753dcd9ac6d989"
   }
 ], {
-  "cacheId": "vuemmerce",
+  "cacheId": "bitmerce",
   "directoryIndex": "/",
   "cleanUrls": false
 })
