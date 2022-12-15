@@ -23,8 +23,8 @@
       </div>
       <div class="mx-2 ">
         <button class="cursor-pointer  flex" v-if="isUserLoggedIn" @click="onShowDropdown">
-          <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full"
-            style="height: 25px; width: 25px" alt="" loading="lazy" /> - {{ getUserName }}
+          <img :src="getAvatar" class="rounded-full"
+            style="height: 25px; width: 25px" alt="" loading="lazy" /> {{ getUserName }}
         </button>
         <div v-if="showDropdown && isUserLoggedIn" class="dropdown w-auto h-28">
           <a href="#" class="button text-center">
@@ -56,6 +56,14 @@ export default {
   },
 
   computed: {
+    getAvatar(){
+      let avatar = this.$auth.user.avatar;
+      if (avatar === '') {
+        return 'https://mdbootstrap.com/img/new/avatars/2.jpg'
+      } else {
+        return avatar;
+      }
+    },
     numProductsAdded() {
       return this.$store.getters.productsAdded.length;
     },

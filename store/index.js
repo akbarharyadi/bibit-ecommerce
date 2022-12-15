@@ -2,121 +2,123 @@ export const state = () => ({
   products: [
     {
       id: 1,
-      title: 'Mahoni',
-      description: 'Pohon Mahoni dapat tumbuh dengan subur di pasir payau dekat dengan pantai dan menyukai tempat yang cukup sinar matahari langsung.',
-      price: 50,
-      ratings: 3,
-      reviews: 5,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 50,
-      images: 'https://f1-styx.imgix.net/article/2020/03/10095150/bm1-kumpulan-biji-mahoni.png'
+      title: 'Alpukat',
+      description: 'Alpukat atau avokad (Persea americana) adalah tumbuhan penghasil buah meja dengan nama sama.',
+      quantity: 44262,
+      images: '/picture/alpukat.jpg'
     },
     {
       id: 2,
-      title: 'Pinus',
-      description: 'Tanaman pinus memiliki berbagai manfaat untuk kesehatan dan keperluan industri. Manfaat tanaman pinus dari aspek kesehatan antara lain, mengandung Flavanoid dan Vitamin C. ',
-      price: 35,
-      ratings: 5,
-      reviews: 10,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      images: 'https://cf.shopee.co.id/file/e147f6029c7ca3ba7f138b9757664916'
+      title: 'Aren',
+      description: 'Enau atau aren (Arenga pinnata, suku Arecaceae) adalah palma yang terpenting setelah kelapa (nyiur) karena merupakan tanaman serba guna.',
+      quantity: 54975,
+      images: '/picture/aren.jpg'
     },
     {
       id: 3,
-      title: 'Meranti',
-      description: 'Pohon meranti merah terdiri dari 22 jenis spesies, diantaranya adalah Shorea acuminata, Shorea joharensis, Shorea lepidota dan Shorea leprosula.',
-      price: 110,
-      ratings: 2,
-      reviews: 3,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      images: 'https://inhutani-2.co.id/iht2_baru/album/g3.jpg'
+      title: 'Durian',
+      description: 'Durian adalah nama tumbuhan tropis yang berasal dari wilayah Asia Tenggara, sekaligus nama buahnya yang bisa dimakan.',
+      quantity: 128153,
+      images: '/picture/durian.jpg'
     },
     {
       id: 4,
-      title: 'Durian',
-      description: 'Durian adalah nama tumbuhan tropis yang berasal dari wilayah Asia Tenggara, sekaligus nama buahnya yang bisa dimakan. Durian memiliki banyak jenis...',
-      price: 50,
-      ratings: 1,
-      reviews: 0,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      images: 'http://jualbibitonline.com/wp-content/uploads/2018/08/Jual-Bibit-Durian-Musang-King-70-cm.jpg'
+      title: 'Jengkol',
+      description: 'engkol atau jering (Archidendron pauciflorum, sinonim: A. jiringa, Pithecellobium jiringa, dan P. lobatum) adalah tumbuhan khas di wilayah Asia Tenggara.',
+      quantity: 128153,
+      images: '/picture/Jengkol.jpg'
     },
     {
       id: 5,
-      title: 'Kemiri',
-      description: 'Bibit Kemiri Sunan Kemiri atau dalam bahasa Latin Aleurites Trisperma Blanco adalah tanaman biji yang masih tergolong ke dalam tanaman rempah-rempah.',
-      price: 35,
-      ratings: 4,
-      reviews: 2,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      images: 'https://www.snackeroo.com/wp-content/uploads/DSC00053-Edited-1024x768.jpg'
+      title: 'Kayu Afrika',
+      description: 'Kayu Afrika atau Meisopsis eminii (Sumber: Google image) Maesopsis eminii Engl. atau dikenal dengan nama local kayu afrika adalah salah satu jenis kayu yang termasuk kedalam family Rhamnaceae.',
+      quantity: 128153,
+      images: '/picture/Kayu afrika.jpg'
     },
     {
       id: 6,
-      title: 'Jengkol',
-      description: 'Bibit jengkol atau jering adalah tanaman yang berasal dari Asia Tenggara. Di Indonesia jengkol sering dijadikan masakan yang sangat sedap dan memiliki rasa khas tersendiri.',
-      price: 110,
-      ratings: 5,
-      reviews: 1,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      images: 'https://s0.bukalapak.com/img/0803972805/large/Bibit_Tanaman_Jengkol_Super.jpg.webp'
+      title: 'Kemenyan',
+      description: 'Kemenyan, sering juga disebut Olibanum,[1] adalah aroma wewangian berbentuk kristal yang digunakan dalam dupa dan parfum.',
+      quantity: 128153,
+      images: '/picture/Kemenyan.jpg'
     },
     {
       id: 7,
-      title: 'Alpukat',
-      description: 'Alpukat adalah salah satu buah yang cukup populer di tanah air. Buah yang satu ini sangat terkenal sebagai jus. Warnanya yang khas dan rasanya yang nikmat menjadikannya …',
-      price: 50,
-      ratings: 5,
-      reviews: 7,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      images: 'https://s4.bukalapak.com/img/491551736/w-1000/Bibit_Alpukat_Miki.jpg'
+      title: 'Kemiri',
+      description: 'Bibit Kemiri Sunan Kemiri atau dalam bahasa Latin Aleurites Trisperma Blanco adalah tanaman biji yang masih tergolong ke dalam tanaman rempah-rempah.',
+      quantity: 128153,
+      images: '/picture/Kemiri.jpg'
     },
     {
       id: 8,
-      title: 'Strawberry',
-      description: 'Strawberry adalah buah manis berbentuk hati berwarna merah, yang sangat disukai karena rasanya yang enak dan manfaat nutrisinya.Buah ini adalah sumber vitamin C dan mangan yang sangat baik...',
-      price: 35,
-      ratings: 3,
-      reviews: 0,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      images: 'https://cdn-cas.orami.co.id/parenting/images/10506.width-1000.jpg'
+      title: 'Ketapang Kencana',
+      description: 'Ketapang kencana (Terminalia mantaly) adalah sejenis tumbuhan peneduh berwujud pohon. Tajuknya yang mendatar dan berlapis-lapis, sebagaimana kerabat satu marganya, ketapang T. catappa, membuatnya juga menjadi penghias taman rumah dan kebun.',
+      quantity: 128153,
+      images: '/picture/Ketapang kencana.jpg'
     },
     {
       id: 9,
+      title: 'Kopi',
+      description: 'Kopi adalah minuman hasil seduhan biji kopi yang telah disangrai dan dihaluskan menjadi bubuk.',
+      quantity: 128153,
+      images: '/picture/Kopi.jpg'
+    },
+    {
+      id: 10,
+      title: 'Mahoni',
+      description: 'Mahoni termasuk pohon besar dengan tinggi pohon mencapai 35–40 m dan diameter mencapai 125 cm.',
+      quantity: 128153,
+      images: '/picture/Mahoni.jpg'
+    },
+    {
+      id: 11,
+      title: 'Makadamia Anti Api',
+      description: 'Macadamia adalah genus dari delapan spesies tumbuhan dari familia Proteaceae, tersebar di Australia timur (7 spesies), dan Sulawesi.',
+      quantity: 128153,
+      images: '/picture/Makadamia anti api.jpg'
+    },
+    {
+      id: 12,
+      title: 'Makadamia Nut',
+      description: 'Macadamia adalah genus dari delapan spesies tumbuhan dari familia Proteaceae, tersebar di Australia timur (7 spesies), dan Sulawesi.',
+      quantity: 128153,
+      images: '/picture/Makadamia nut.jpg'
+    },
+    {
+      id: 13,
       title: 'Mangga',
-      description: 'Mangga atau mempelam adalah nama sejenis buah, demikian pula nama pohonnya. Mangga termasuk ke dalam marga Mangifera, yang terdiri dari 35-40 anggota dari suku Anacardiaceae.',
-      price: 110,
-      ratings: 4,
-      reviews: 2,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      images: 'https://akcdn.detik.net.id/community/media/visual/2019/11/11/33ae5441-1e3d-450d-a817-373b10a9246c.jpeg'
-    }
+      description: 'Mangga atau mempelam adalah nama sejenis buah, demikian pula nama pohonnya. Mangga termasuk ke dalam genus Mangifera, yang terdiri dari 35-40 anggota dari famili Anacardiaceae.',
+      quantity: 128153,
+      images: '/picture/Mangga.jpg'
+    },
+    {
+      id: 14,
+      title: 'Meranti',
+      description: 'Meranti adalah anggota dari suku Dipterocarpaceae (meranti-merantian) yang terdiri dari pohon-pohon besar yang menjadi penyusun utama sebagian besar hutan tropika basah pada kawasan dataran rendah tropis Asia.',
+      quantity: 128153,
+      images: '/picture/Meranti.jpg'
+    },
+    {
+      id: 15,
+      title: 'Petai',
+      description: 'Petai, pete (IPA:pətɛ), atau mlanding (Parkia speciosa) merupakan pohon tahunan tropika dari famili polong-polongan (Fabaceae), subfamili petai-petaian (Mimosoidae). Tumbuhan ini tersebar luas di Nusantara bagian barat.',
+      quantity: 128153,
+      images: '/picture/Petai.jpg'
+    },
+    {
+      id: 16,
+      title: 'Pinus',
+      description: 'Pohon ini berasal dari famili yang sama dengan pohon fir dan pohon spruce, yaitu famili Pinaceae dengan genus pinus. Pinus atau tusam cocok tumbuh di daerah dataran tinggi.',
+      quantity: 128153,
+      images: '/picture/Pinus.jpg'
+    },
+    {
+      id: 17,
+      title: 'Pucuk Merah',
+      description: 'Klasifikasi dan Morfologi dari Pucuk Merah (Syzygium oleana) - Pucuk merah dikenal sebagai tanaman hias, karena daun muda atau pucuknya ketika tumbuh akan berwarna merah, sedangkan daun yang sudah tua berwarna hijau.',
+      quantity: 128153,
+      images: '/picture/Pucuk merah.jpg'
+    },
   ],
   userInfo: {
     isLoggedIn: false,

@@ -38,16 +38,6 @@
             <span :class="[detail ? 'text-3xl' : 'text-lg']">{{ product.title }}</span>
           </nuxt-link>
         </div>
-        <button class="button text-lg" :title="removeFromFavouriteLabel" v-show="product.isFavourite" @click="removeFromFavourite(product.id)">
-          <span class="icon">
-            <i class="fas fa-heart"></i>
-          </span>
-        </button>
-        <button class="button text-lg" :title="addToFavouriteLabel" v-show="!product.isFavourite" @click="saveToFavorite(product.id)">
-          <span class="icon">
-            <i class="far fa-heart"></i>
-          </span>
-        </button>
       </div>
       <div class="content is-clearfix">
         <p :class="[detail ? 'text-2xl' : 'text-base']">{{ product.description }}</p>
@@ -70,9 +60,9 @@
             <i v-if="product.ratings === 5" class="fa fa-star"></i>
             <p class="ml-2 text-lg">{{ product.reviews > 0 ? `${product.reviews} Reviews` : 'No reviews' }}</p> -->
           </div>
-          <p class="text-1xl font-medium">
-            Tersedia: <strong> {{ product.price }}</strong>
-          </p>
+          <!-- <p class="text-1xl font-medium">
+            Tersedia: <strong> {{ product.quantity }}</strong>
+          </p> -->
         </div>
         <div class="flex justify-between mt-5 items-center">
           <!-- <select class="p-2 border-2 rounded-2xl" @change="onSelectQuantity(product.id)" v-model="selected"> -->
