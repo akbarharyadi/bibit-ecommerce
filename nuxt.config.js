@@ -44,7 +44,7 @@ module.exports = {
       // { property: "twitter:image", content: "https://example.com/image.jpg" }
     ],
     link: [
-      { rel: "icon", type: "image/png", href: "/logo.png" },
+      { rel: "icon", type: "image/png", href: "logo.png" },
       {
         rel: "stylesheet",
         href:
