@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Product from '@/components/Products.vue'
+import Product from '@/components/ProductFormStep.vue'
 export default {
   name: 'product_detail-id',
 

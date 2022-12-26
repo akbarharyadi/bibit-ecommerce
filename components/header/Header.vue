@@ -57,11 +57,11 @@ export default {
 
   computed: {
     getAvatar(){
-      let avatar = this.$auth.user.avatar;
+      let avatar = this.$auth.user.photos;
       if (avatar === '') {
         return 'https://mdbootstrap.com/img/new/avatars/2.jpg'
       } else {
-        return avatar;
+        return "data:image/png;base64," + avatar;
       }
     },
     numProductsAdded() {
@@ -71,7 +71,7 @@ export default {
       return this.$auth.loggedIn;
     },
     getUserName() {
-      let name = this.$auth.user.name;
+      let name = this.$auth.user.displayName;
 
       if (name === '') {
         return 'user';

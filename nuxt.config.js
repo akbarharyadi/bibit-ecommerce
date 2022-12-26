@@ -73,7 +73,9 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: '@/plugins/custom-plugin.js', ssr: false },
+  ],
 
   /*
    ** Nuxt.js modules
@@ -84,6 +86,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/auth-next',
     '@nuxtjs/pwa',
+    'nuxt-leaflet',
   ],
   auth: {
     strategies: {

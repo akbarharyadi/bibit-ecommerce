@@ -21,7 +21,7 @@
                                         <div class="flex justify-center pt-1 mb-1 pb-1">
                                             <a href="http://localhost:4000/auth/google" data-mdb-ripple="true"
                                                 data-mdb-ripple-color="light"
-                                                class="text-black flex items-center inline-block px-12 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+                                                class="text-black flex items-center inline-block px-12 py-2.5 mb-2 font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
                                                 style="background-color: #8ad300;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"
                                                     class="w-4 h-4">
@@ -33,7 +33,7 @@
                                         <div class="flex justify-center pt-1 mb-1 pb-1">
                                             <button type="button" data-mdb-ripple="true"
                                                 data-mdb-ripple-color="light"
-                                                class="text-black flex items-center inline-block px-12 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+                                                class="text-black flex items-center inline-block px-12 py-2.5 mb-2 font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
                                                 style="background-color: #8ad300;">
                                                 Masuk atau Daftar (Kelompok)
                                             </button>
