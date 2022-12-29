@@ -114,7 +114,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
-    baseURL: "http://localhost:4000"
+    baseURL: "http://www.bitmerce.cloud/api"
   },
 
   generate: {
