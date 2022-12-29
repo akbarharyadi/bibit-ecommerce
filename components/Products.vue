@@ -1,40 +1,36 @@
 <template>
   <div :class="[detail ? 'detail' : '']" class="rounded-2xl shadow-xl shadow-slate-300/60">
     <div class="img-wrapper rounded-t-2xl">
-      <nuxt-link
-        :to="{
-          name: 'product_detail-id',
-          params: {
-            id: product.id,
-            title: product.title,
-            price: product.price,
-            rating: product.ratings,
-            reviews: product.reviews,
-            isAddedBtn: product.isAddedBtn,
-            images: product.images
-          }
-        }"
-      >
+      <nuxt-link :to="{
+  name: 'product_detail-id',
+  params: {
+    id: product.id,
+    title: product.title,
+    price: product.price,
+    rating: product.ratings,
+    reviews: product.reviews,
+    isAddedBtn: product.isAddedBtn,
+    images: product.images
+  }
+}">
         <img class="rounded-t-2xl" :src="product.images" alt="Placeholder image" style="height:400px;width:100%;">
       </nuxt-link>
     </div>
     <div class="text-wrapper p-4">
       <div class="flex items-center justify-between mb-3">
         <div class="media-content">
-          <nuxt-link
-              :to="{
-                name: 'product_detail-id',
-                params: {
-                  id: product.id,
-                  title: product.title,
-                  price: product.price,
-                  rating: product.ratings,
-                  reviews: product.reviews,
-                  isAddedBtn: product.isAddedBtn,
-                  images: product.images
-                }
-              }"
-            >
+          <nuxt-link :to="{
+  name: 'product_detail-id',
+  params: {
+    id: product.id,
+    title: product.title,
+    price: product.price,
+    rating: product.ratings,
+    reviews: product.reviews,
+    isAddedBtn: product.isAddedBtn,
+    images: product.images
+  }
+}">
             <span :class="[detail ? 'text-3xl' : 'text-lg']">{{ product.title }}</span>
           </nuxt-link>
         </div>
@@ -66,7 +62,7 @@
         </div>
         <div class="flex justify-between mt-5 items-center">
           <!-- <select class="p-2 border-2 rounded-2xl" @change="onSelectQuantity(product.id)" v-model="selected"> -->
-            <!-- <option
+          <!-- <option
               v-bind:key="quantity"
               v-for="quantity in quantityArray"
               :value="quantity"
@@ -74,8 +70,20 @@
               {{ quantity }}
             </option> -->
           <!-- </select> -->
-          <button class="rounded-xl p-3 bg-blue text-white" v-if="!product.isAddedToCart" @click="addToCart(product.id)">{{ addToCartLabel }}</button>
-          <button class="rounded-xl p-3" v-if="product.isAddedToCart" @click="removeFromCart(product.id, false)">{{ removeFromCartLabel }}</button>
+
+          <nuxt-link class="rounded-xl p-3 bg-blue text-white" :to="{
+              name: 'product_detail-id',
+              params: {
+                id: product.id,
+                title: product.title,
+                price: product.price,
+                rating: product.ratings,
+                reviews: product.reviews,
+                isAddedBtn: product.isAddedBtn,
+                images: product.images
+              }
+            }">{{ addToCartLabel }}
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -87,7 +95,7 @@ export default {
   name: 'products',
   props: ['product', 'detail'],
 
-  data () {
+  data() {
     return {
       addToCartLabel: 'Ajukan',
       viewDetailsLabel: 'Details',
@@ -99,7 +107,7 @@ export default {
     }
   },
 
-  mounted () {
+  mounted() {
     for (let i = 1; i <= 20; i++) {
       this.quantityArray.push(i);
     }
@@ -110,13 +118,13 @@ export default {
   },
 
   computed: {
-    isUserLogged () {
+    isUserLogged() {
       return this.$store.getters.isUserLoggedIn;
     }
   },
 
   methods: {
-    addToCart (id) {
+    addToCart(id) {
       let data = {
         id: id,
         status: true
@@ -124,7 +132,7 @@ export default {
       this.$store.commit('addToCart', id);
       this.$store.commit('setAddedBtn', data);
     },
-    removeFromCart (id) {
+    removeFromCart(id) {
       let data = {
         id: id,
         status: false
@@ -132,7 +140,7 @@ export default {
       this.$store.commit('removeFromCart', id);
       this.$store.commit('setAddedBtn', data);
     },
-    saveToFavorite (id) {
+    saveToFavorite(id) {
       let isUserLogged = this.$store.state.userInfo.isLoggedIn;
 
       if (isUserLogged) {
@@ -141,10 +149,10 @@ export default {
         this.$store.commit('showLoginModal', true);
       }
     },
-    removeFromFavourite (id) {
+    removeFromFavourite(id) {
       this.$store.commit('removeFromFavourite', id);
     },
-    onSelectQuantity (id) {
+    onSelectQuantity(id) {
       let data = {
         id: id,
         quantity: this.selected
@@ -156,25 +164,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .detail {
-    @apply flex;
-    @apply flex-col;
-    @apply lg:flex-row;
-    @apply m-5;
-    @apply shadow-2xl;
+.detail {
+  @apply flex;
+  @apply flex-col;
+  @apply lg:flex-row;
+  @apply m-5;
+  @apply shadow-2xl;
 
-    .img-wrapper {
-      flex: 1;
+  .img-wrapper {
+    flex: 1;
 
-      img {
-        @apply lg:rounded-none;
-        @apply lg:rounded-tl-2xl;
-        @apply lg:rounded-bl-2xl;
-      }
-    }
-
-    .text-wrapper {
-      flex: 2;
+    img {
+      @apply lg:rounded-none;
+      @apply lg:rounded-tl-2xl;
+      @apply lg:rounded-bl-2xl;
     }
   }
+
+  .text-wrapper {
+    flex: 2;
+  }
+}
 </style>
