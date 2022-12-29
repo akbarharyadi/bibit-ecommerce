@@ -56,6 +56,10 @@ module.exports = {
           "sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p",
         crossorigin: "anonymous",
         href: "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://unpkg.com/leaflet/dist/leaflet.css'
       }
     ]
   },
@@ -114,6 +118,7 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
+    // baseURL: "http://localhost:4000"
     baseURL: "http://www.bitmerce.cloud/api"
   },
 

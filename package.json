@@ -5,7 +5,9 @@
   "author": "Akbar Priyono Haryadi <ivan.lori@protonmail.com>",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt generate"
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "repository": {
     "type": "git",

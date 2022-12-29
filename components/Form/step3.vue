@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-center p-3 sm:p-6 md:w-full">
+    <div class="flex items-center justify-center p-3 sm:p-6 md:w-full"  style="background-color: white;">
         <div class="w-full">
             <h6 class="mb-4 text-sm">Step3/3</h6>
             <h3 class="mb-4 text-xl font-bold text-blue-600">Pengajuan Bibit {{ product.title }}</h3>
