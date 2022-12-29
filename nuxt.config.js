@@ -119,7 +119,7 @@ module.exports = {
    */
   axios: {
     // baseURL: "http://localhost:4000"
-    baseURL: "http://www.bitmerce.cloud/api"
+    baseURL: "http://www.bitmerce.cloud:5000"
   },
 
   generate: {
