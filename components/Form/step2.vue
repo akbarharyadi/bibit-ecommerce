@@ -27,10 +27,12 @@
                 <div data-v-11b4eedd="" data-v-164ff72a="" class="results__agreement-preview">
                     <h4> Download Persyartan</h4>
                     <p> Silahkan download persyartan dibawah ini kemudian isi secara lengkap dan upload kembali pada step berikutnya. </p>
-                    <h4> List Persyaratan: </h4>
+                    <br>
+                    <h4> List Persyaratan yang perlu disiapkan: </h4>
                     <ul>
-                        <li> <a href="/file/permohonan.pdf" style="color:blue" target="_blank"> Surat Permohonan Pengajuan BIBIT (Klik disini untuk mendownload)</a>  </li>
-                        <li> <a href="/file/pernyataaan.pdf" style="color:blue" target="_blank"> Surat Pernyataan Pengajuan BIBIT (Klik disini untuk mendownload)</a> </li>
+                        <li> Scan KTP </li>
+                        <li> Sketsa/Gambar/Foto lahan pertanian </li>
+                        <li> Koordinat tempat pertanian (format latlong atau/dan DMS (derajat (°), menit ('), dan sekon ("))) </li>
                     </ul>
                 </div>
             </div>

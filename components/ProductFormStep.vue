@@ -2,7 +2,7 @@
   <div class="flex items-center min-h-screen bg-gray-50">
     <div class="flex-1 h-full max-w-6xl mx-auto bg-white rounded-lg shadow-xl">
       <div class="flex flex-col md:flex-row">
-        <div class="h-32 md:h-auto md:w-1/3">
+        <div class="h-32 md:h-auto md:w-1/3" v-if="step != 3">
           <img class="object-cover w-full"  style="height:500px;" :src="product.images" alt="img" />
         </div>
         <step-1 :product="product" @go="goStep" v-show="step == 1"></step-1>

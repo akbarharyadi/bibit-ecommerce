@@ -75,6 +75,7 @@ module.exports = {
    */
   plugins: [
     { src: '@/plugins/custom-plugin.js', ssr: false },
+    { src: '@/plugins/axios' }
   ],
 
   /*
